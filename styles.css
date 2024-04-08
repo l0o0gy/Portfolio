@@ -1,11 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
 body{
   font-family: 'Ink Free', 'Arial';
-  /* transition: 0.25s; */
   color: #000;
   background: rgb(195,128,219);
   background: linear-gradient(0deg, rgba(195,128,219,1) 20%, rgba(198,117,227,1) 37%, rgba(187,94,221,1) 54%, rgba(174,73,210,1) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%);
@@ -98,18 +96,18 @@ color: #000;
   height: 650px;
   overflow: hidden;
   opacity: 0;
-  transition: all 4s;
+  transition: all 2s;
 }
 .show{
   opacity: 1;
 }
-.project-contanier{
-  /* opacity: 0; */
-  transition: all 4s;
+/* .project-contanier{
+  opacity: 0;
+  transition: all 2s;
 }
 .showproj{
   opacity: 1;
-}
+} */
 #about-title{
   padding-top: 50px;
   color: #000;
@@ -271,7 +269,7 @@ color: #000;
   border-radius: 20px;
   background-color: rgba(101, 27, 104, 0.945);
   box-shadow: 5px 0px 20px rgba(17, 17, 17, 0.774);
-  margin-bottom: 40px;
+  margin-bottom: 2%;
 }
 #contact-title{
   padding-top: 100px;
@@ -281,21 +279,43 @@ color: #000;
   font-size: 40px;
 }
 .contact-container h3{
-  font-weight: 300;
-  padding-right: 160px;
+  font-weight: 500;
+  padding: 10%;
 }
+
 button{
-  padding: 10px;
+  padding: 7px;
+  padding-left: 60px;
+  padding-right: 60px;
   border-radius: 10px;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 5px;
   background: rgb(96,40,135);
-  background: linear-gradient(0deg, rgba(96,40,135,1) 18%, rgba(178,5,247,1) 41%);;
+  background: linear-gradient(0deg, rgba(96,40,135,1) 18%, rgba(178,5,247,1) 41%);
 }
 button:hover{
   box-shadow: 2px 0 10px rgb(244, 245, 240);
-
 }
-
+.feedback{
+  text-align: center;
+}
+.contact-form{
+  text-align: center;  
+ 
+}
+.contact-form label {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+.contact-form input{
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact-form textarea{
+  padding: 10px;
+  border-radius: 5px;
+}
 #Headings{
   text-align: center;
   font-size: 45px;
@@ -443,7 +463,6 @@ button:hover{
   font-size: 150%;
   font-weight: 300;
 }
-
 .animated-text{
   margin-left: 10%;
   margin-right: 10%;
@@ -458,8 +477,8 @@ button:hover{
   grid-template-columns: repeat(1,1fr);
  
 }
-.card-container h3{
-  text-align: center;
+.card-container > h3{
+  padding-left: 0%;
 }
 }
 
