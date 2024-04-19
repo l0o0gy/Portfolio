@@ -38,7 +38,7 @@ header{
   background: linear-gradient(0deg, rgba(195,128,219,1) 20%, rgba(198,117,227,1) 37%, rgba(187,94,221,1) 54%, rgba(174,73,210,1) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%);
 }
 #self-img{
-  width: 480px;
+  width: 490px;
   margin-left:5%;
   padding-left: 10px;
 }
@@ -154,6 +154,9 @@ color: #000;
   margin: 20px 20px;    
   text-align: center;
 }
+.section-container .info #title{ 
+font-size: 45px;
+}
 .section-container .info p {
   background-color: rgba(143,53,175,1);
   box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
@@ -219,7 +222,6 @@ padding: 5px;
   text-align: center;
   font-size: 45px;
   color: #000;
-  margin-bottom: 5px;
 }
 .project-contanier{
   width: 100%;
@@ -228,12 +230,12 @@ padding: 5px;
   justify-content: center;
   align-items: center;
   padding: 0px 90px;
-  margin-top: -20px;
 }
 .main-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 .main-container .card-container{
   flex:1;
@@ -275,63 +277,94 @@ margin-top: -80px;
   box-shadow: 2px 0 10px silver;
 
 }
-
-.contact-container{
-  margin: 10px;
-  height: 30%; 
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  font-size: 24px;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: rgba(143,53,175,1);
-  box-shadow: 5px 0px 20px rgba(17, 17, 17, 0.774);
-  margin-bottom: 2%;
-}
-#contact-title{
-  padding-top: 40px;
+/* --------------//section 4//------------ */
+#Headings{
+  padding-top: 5px;
+  text-align: center;
+  font-size: 45px;
   color: #000;
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 40px;
-}
-.contact-container h3{
-  font-weight: 500;
-  padding: 10%;
-}
-
-button{
-  padding: 10px 120px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 15px;
-  margin-top: 5px;
-  background-color: #ddd;
-  border: 0px;
-}
-button:hover{
-  box-shadow: 2px 0 10px rgb(244, 245, 240);
-}
-.feedback{
-  text-align: center;
-}
-.contact-form{
-  text-align: center;  
-}
-.contact-form label {
-  font-size: 25px;
   margin-bottom: 10px;
 }
-.contact-form input{
-  padding: 10px 60px;
+.contact-container{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
+  align-items: center;
+  text-align: center; 
+  margin-top: -80px;
+
+}
+.contact-container .feedback{
+  background-color: rgba(143,53,175,1);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 20px 20px; 
+  padding: 10px;  
+}
+.contact-container .feedback h3{
+  margin: 15px 0px;
+  padding: 50px;
+  font-size: 25px;
+  color:white;
+}
+.contact-container .feedback label{
+color: white;
+font-size: 20px;
+}
+.contact-container .feedback input{
+  padding: 10px 40px;
+  margin: 5px;
   border-radius: 10px;
+  border: 0ch;
+}
+.contact-container .feedback textarea{
+  padding: 20px 45px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 0ch;
+}
+.contact-container .feedback button{
+  padding: 10px 105px; 
+  margin: 8px;
+  border-radius: 10px;
+  border: 0ch; 
+  background-color: #ddd;
+  transition: transform 0.3s ease-in-out;
 
 }
-.contact-form textarea{
-  padding: 50px 60px;
-  border-radius: 5px;
+.contact-container .feedback button:hover{
+  transform: scale(1.01);
+  background: rgba(239, 236, 241, 0.815);  
+  box-shadow: 2px 0 10px silver;
 }
+footer{
+  margin: 0;
+  background-color: rgb(202, 198, 198);
+  color: #000;
+  text-align: center;
+}
+footer p {
+  font-size: 20px;
+  font-weight:600 ;
+  padding: 10px;
+}
+footer .footer-icon .link-icon{
+  width: 25px;  
+  margin-top: -1px;
+}
+.hidden{
+  opacity: 0;
+  transition: all 2s;
 
+}
+.show{
+  opacity: 1;
+}
 @media screen and (max-width:640px){
   .navbar-container a{
     font-size: 15px;
@@ -382,34 +415,12 @@ button:hover{
  .main-container .card-container{
   margin-top: 100px;
  }
-.contact-container{
-  width: 70%;
-  height: 100%; 
-  margin-left: 10%;
-  display: grid;  
-  text-align: center;
-  grid-template-columns: repeat(1,1fr);
- 
-}
-.card-container > h3{
-  padding-left: 0%;
-}
-}
-
-footer{
-  margin-top:5px ;
-  background-color: rgb(202, 198, 198);
-  border-radius: 5px;
-  color: #000;
-  padding: 10px;
-  text-align: center;
-
-}
-.hidden{
-  opacity: 0;
-  transition: all 2s;
-
-}
-.show{
-  opacity: 1;
+ .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .feedback{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+     
+  }
 }

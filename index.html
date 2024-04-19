@@ -51,7 +51,7 @@
         <div class="personalinfo-container">
         <div class="section-container">
             <div class="info"> 
-                <h1 id="about-title">"About me" </h1>
+                <h1 id="title">"About me" </h1>
                 <strong>
                     <p id="about-paragraph">I'm Mina Thamer a 23 years old from Baghdad, Iraq. A front-end developer 
                         Gradute from U.O.M chemist departement .
@@ -62,7 +62,7 @@
                 </strong>  
             </div>
             <div class="info">
-               <h1 id="skills-title">"Skills "</h1>
+               <h1 id="title">"Skills "</h1>
                <div class="skills-logo">
                   <img src="photo/html (1).png" alt="html-logo" id="skills-logo">
                   <img src="photo/css-3.png" alt="css-logo" id="skills-logo">
@@ -71,7 +71,7 @@
                   <img src="photo/photoshop.png " alt="photoshop-logo" id="skills-logo">
                   <img src="photo/illustrator.png " alt="illustrator-logo" id="skills-logo">
                 </div>
-              <h1 id="Abilities-title">"Abilities"</h1>
+              <h1 id="title">"Abilities"</h1>
               <ol class="abilities-paragraph">
                   <li>Communication</li>
                   <li>Teamwork</li>
@@ -126,70 +126,24 @@
     </section> 
     <!-- ----------//section 4//------------ -->
     <section id="contact-container" class="hidden">
-      <h1 id="contact-title">"contact"</h1>
+      <h1 id="Headings">"contact"</h1>
       <div class="contact-container">
-      <div class="feedback">
-        <h3>If you have any feedback want to share it with me i would like to hear it , also if you need a web developer i'll be here for help
-         you can contact me any time ...
-        </h3>
+          <div class="feedback">
+              <h3>If you have any feedback want to share it with me i would like to hear it , also if you need a web developer i'll be here for help
+                  you can contact me any time ...
+              </h3>
+              <form class="contact-form">
+             <label for="name">Name</label> <br>
+             <input type="text" placeholder="inter your name"  id="name" required/> <br>
+             <label for="email">Your Email</label> <br>
+             <input type="email" placeholder="inter your Email" id="email"/> <br>
+             <label for="Message">Message</label> <br>
+             <textarea type="text" required id="Message"></textarea><br>
+             <button type="submit"> submit</button>
+             </form>
+          </div>
       </div>
-      <form class="contact-form">
-        <label for="name">Name</label> <br>
-        <input type="text" placeholder="inter your name"  id="name" required/> <br>
-        <label for="email">Your Email</label> <br>
-        <input type="email" placeholder="inter your Email" id="email"/> <br>
-        <label for="Message">Message</label> <br>
-        <textarea type="text" required id="Message"></textarea><br>
-        <button type="submit"> submit</button>
-      </form>
-      </div>
-      <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
-  ></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-  crossorigin="anonymous"
-  ></script>
-  <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-  ></script>
-
-  <script type="text/javascript">      
-    (function () {
-        emailjs.init("14XIraYRF3kluf9UQ");
-      })();
-  </script>
-  <script>
-      emailjs.sendForm("service_ocst20p", "template_fi95pzp", "#myForm")
-  </script>
-  <script>
-    // listen to the form submission
-    document
-      .getElementById("myForm")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const serviceID = "service_ocst20p";
-        const templateID = "template_fi95pzp";
-
-        // send the email here
-        emailjs.sendForm(serviceID, templateID, this).then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-            alert("SUCCESS!");
-          },
-          (error) => {
-            console.log("FAILED...", error);
-            alert("FAILED...", error);
-          }
-        );
-        });
-       </script>
-      </section>  
+  </section>  
     </main>
     <script src="practis.js"></script>
    <footer>
