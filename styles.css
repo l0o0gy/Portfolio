@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
 body{
   font-family: 'Ink Free', 'Arial';
@@ -235,9 +237,7 @@ color: #000;
   }
 }
 /* ----------//section 3//--------- */
-.project-contanier{
-  height: 100vh; 
-}
+
 #Headings{
   padding-top: 40px;
   text-align: center;
@@ -246,68 +246,59 @@ color: #000;
   height: 70px; 
   margin-bottom: 100px;
 }
-/* .main-container {
-  width: 88%;
-  height: 40%; 
-  margin-left: 4%;
-  background-color: rgba(101, 27, 104, 0.945);
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 2px 0 9px 6px silver;
-} */
-.card-position{
-  display: grid;  
-  grid-template-columns:repeat(3,1fr);
+
+.project-contanier{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
 }
-.card-container{
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .card-container{
+  flex:1;
+  margin: 20px 20px;    
   background-color: rgba(143,53,175,1);
-  height: 300px;
-  padding-bottom: 60px;
-  margin: 6px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
   border-radius: 20px;
-  padding: 10px;  
-  box-shadow: 5px 0 10px rgb(146, 145, 145);
-
+} 
+.main-container .card-container img {
+width: 100%;
+height: auto;
+margin-top: -80px;
 }
-.card-img{
-  width: 400px;
-  margin-top: -100px;
-}
-.card-data{
+.main-container .card-container h2{
+  margin: 15px 0px;
+  font-size: 28px;
+  color:white;
   text-align: center;  
-}
-.card-title{
-  font-size: 150%;
-  font-weight: 700;
-  padding-top: 30px;
-}
-.animated-text{
-  padding-top: 10px;
-  margin-top: 40px;
-  padding-left: -20px;
-  padding-right: -20px;
-  margin-right: 60px;
-  margin-left: 60px;
-  height: 30px;
-  background-color: #ddd;
-  /* background: rgba(95, 40, 135, 0.596); */
-  /* background: linear-gradient(0deg, rgba(95, 40, 135, 0.582) 18%, rgba(178, 5, 247, 0.541) 41%);  overflow: hidden; */
-  border-radius: 10px;
-  box-shadow: 2px 0 10px #333232;
-  transition: transform 0.3s ease-in-out;
-}
-.animated-text a{
- text-decoration: none;
- color: #000;
- font-weight: 600;
-  text-align: center;
-  font-size: 20px;
-  transition: transform 0.3s
-}
 
-.animated-text:hover{
+}
+.main-container .card-container p{
+  margin: 0px 13px;
+  color:white;
+}
+.main-container .card-container a{
+  background-color: #ddd;
+  font-size: 16px;
+  line-height: 5;
+  padding:10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+.main-container .card-container a:hover{
   transform: scale(1.2);
-  background: rgba(239, 236, 241, 0.815);
+  background: rgba(239, 236, 241, 0.815);  
+  box-shadow: 2px 0 10px silver;
+
 }
 
 .contact-container{
@@ -456,35 +447,12 @@ button:hover{
   #abilities-paragraph li {
     margin-left: 50px;
   }
-.main-container{
-  width: 80%;
-  height: 100%; 
-  margin:5%;
-}
-.card-position{
-  display: grid;  
-  grid-template-columns:repeat(1,1fr); 
-
-}
-.card-img{
-  width: 100%;
-  margin-top:0px;
-}
-.card-data{
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 70%; 
-  padding-bottom: 5%;
-}
-.card-title{
-  font-size: 150%;
-  font-weight: 300;
-}
-.animated-text{
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 40%;
-}
+  .main-container{
+    flex-direction: column;
+ }
+ .main-container .card-container{
+  margin-top: 100px;
+ }
 .contact-container{
   width: 70%;
   height: 100%; 
