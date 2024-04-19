@@ -9,22 +9,5 @@ const observer = new IntersectionObserver((entries)=>{
     }
   });
 });
-
-const hiddenAbout = document.querySelectorAll('.about-container ')
+const hiddenAbout = document.querySelectorAll('.hidden')
 hiddenAbout.forEach((el)=> observer.observe(el));
-
-const project =new IntersectionObserver((entries)=>{
-  entries.forEach((entry)=> {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add('showproj');
-    } else {
-      entry.target.classList.remove('showproj');
-
-    }
-  });
-});
-const hiddenProject = document.querySelectorAll('.project-contanier ')
-hiddenProject.forEach((el)=> observer.observe(el));
-
-
