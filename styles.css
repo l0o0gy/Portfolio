@@ -7,11 +7,9 @@
 body{
   font-family: 'Ink Free', 'Arial';
   color: #000;
-  background-color: white;
   
 }
 header{
-  /* background-color: rgba(202, 198, 198, 0.411); */
   background-color: white;
   gap: 40rem; 
   padding: 10px;
@@ -138,94 +136,72 @@ color: #000;
   overflow: hidden;
 }
 
-#about-title{
-  padding-top: 50px;
-  color: #000;
+.personalinfo-container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px  
+}
+.section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-container .info{
+  flex:1;
+  margin: 20px 20px;    
   text-align: center;
-  padding-bottom: 20px;
-  font-size: 40px;
-  padding-left: 200px;
 }
-#about-paragraph{
-  color: #ddd;
-  font-size: 25px;
-  font-weight: 400;
-  padding: 30px;
-  width: 450px;
-  height: 390px; 
-  margin-left: 170px;
-  border-radius: 20px;
+.section-container .info p {
   background-color: rgba(143,53,175,1);
-  /* background: rgb(168, 110, 189); */
-  /* background: linear-gradient(0deg, rgb(157, 102, 177) 20%, rgb(174, 102, 201) 37%, rgb(141, 71, 167) 54%, rgb(139, 58, 168) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%);  padding: 30px; */
-  box-shadow: 5px 0px 20px rgba(17, 17, 17, 0.774);
-}
-.grid-container{
-  display: grid;  
-  grid-template-columns:repeat(2,1fr);
-}
-#skills-title{
-  padding-top: 50px;
-  color: #000;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
+  border-radius: 20px;
+  margin: 15px 0px;
+  font-size: 20px;
+  color:white;
+  padding: 90px 10px; 
   text-align: center;
-  padding-bottom: 20px;
-  font-size: 40px;
 }
-.skills-logo img{
-  padding-left: 15px;
-}
-.skills-logo{
-  font-size: 24px;
-  padding: 30px;
-  width: 500px;
-  height: 80px; 
-  margin-left: 50px;
-  border-radius: 20px;
+.section-container .info .skills-logo{
   background-color: rgba(143,53,175,1);
-  ;
-  /* background-color: rgba(101, 27, 104, 0.945); */
-  /* background: rgb(195,128,219); */
-  /* background: linear-gradient(0deg, rgba(195,128,219,1) 20%, rgba(198,117,227,1) 37%, rgba(187,94,221,1) 54%, rgba(174,73,210,1) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%); */
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
   border-radius: 20px;
-  padding: 30px;
-  box-shadow: 5px 0px 20px rgba(17, 17, 17, 0.774);
+  margin: 15px 0px;
+  padding: 17px 10px;
 }
-#skills-logo{
-  width: 60px;
+.section-container .info .skills-logo #skills-logo{
+padding: 5px;
 }
-#Abilities-title{
-  padding-top: 50px;
-  color: #000;
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 40px;
-}
-#abilities-paragraph{
-  color: #ddd;
-  font-size: 25px;
-  padding: 30px;
-  width: 500px;
-  height: 130px; 
-  margin-left: 50px;
-  border-radius: 20px;
-  /* background-color: rgba(101, 27, 104, 0.945); */
-  /* background: rgb(195,128,219); */
-  /* background: linear-gradient(0deg, rgba(195,128,219,1) 20%, rgba(198,117,227,1) 37%, rgba(187,94,221,1) 54%, rgba(174,73,210,1) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%); */
+.section-container .info .abilities-paragraph{
   background-color: rgba(143,53,175,1);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
   border-radius: 20px;
-  padding: 30px;
-  box-shadow: 5px 0px 20px rgba(17, 17, 17, 0.774);
+  margin: 15px 0px;
+  font-size: 28px;
+  color:white;
+  padding: 17px 10px;
+  text-align: left;
 }
-#abilities-paragraph li {
-  margin-left: 50px;
+.section-container .info .abilities-paragraph li{
+  margin-left:70px;
 }
  #atomic-logo{
-  position:absolute;
-  width: 400px;
-  top:800px;
-  left: -17%;
+  position:fixed;
+  width: 300px;
+  top:5px;
+  left: -10%;
   z-index: -1;
-  animation: rotate 10s infinite ;
+  animation: rotate 20s infinite ;
+}
+#atomic-logo2{
+  position:fixed;
+  width: 150px;
+  top:480px;
+  right: -10px;
+  z-index: -1;
+  animation: rotate 20s infinite ;
 }
 @keyframes rotate {
   from{
@@ -233,20 +209,18 @@ color: #000;
   }
   to {
     transform: rotate(360deg);
-
   }
 }
+
 /* ----------//section 3//--------- */
 
 #Headings{
-  padding-top: 40px;
+  padding-top: 5px;
   text-align: center;
   font-size: 45px;
   color: #000;
-  height: 70px; 
-  margin-bottom: 100px;
+  margin-bottom: 5px;
 }
-
 .project-contanier{
   width: 100%;
   min-height: 100vh;
@@ -254,6 +228,7 @@ color: #000;
   justify-content: center;
   align-items: center;
   padding: 0px 90px;
+  margin-top: -20px;
 }
 .main-container{
   display: flex;
@@ -397,56 +372,10 @@ button:hover{
   .parent-icon{
     text-align: center;
   } 
-  .about-container{
-    height: 100%;
-    overflow: hidden;
-  }
-  .grid-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-  }
-  #about-title{
-    padding-left: 40px;
-    font-size: 30px;
-  }
-  #about-paragraph{
-    width: 80%;
-    height: 100%; 
-    margin:5%;
-  }
-  #skills-title {
-    padding-right: 10px;
-    padding-top: 50px;
-    font-size: 30px;
-  }
-  .skills-logo img{
-   
-    padding-left: 15px;
-  }
-  .skills-logo{
-    width: 80%;
-    height: 100%; 
-    margin:5%;
-  }
-  #skills-logo{
-    width: 60px;
-    padding-left: 50px;
+  .section-container {
+    flex-direction: column;
 
-  }
-  #Abilities-title{
-    padding-right: 10px;
-    padding-top: 50px;
-    font-size: 30px;
-  }
-  #abilities-paragraph{
-    width: 80%;
-    height: 100%; 
-    margin:5%;
-  }
-  #abilities-paragraph li {
-    margin-left: 50px;
-  }
+}
   .main-container{
     flex-direction: column;
  }
@@ -469,7 +398,7 @@ button:hover{
 
 footer{
   margin-top:5px ;
-  background-color: rgba(202, 198, 198, 0.411);
+  background-color: rgb(202, 198, 198);
   border-radius: 5px;
   color: #000;
   padding: 10px;

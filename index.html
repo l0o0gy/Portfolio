@@ -12,7 +12,7 @@
     <nav class="navbar-container">
       <font Face="Ink Free">
         <a href="#hero-section" class="active">Home</a>    
-        <a href="#about-container" > About</a>
+        <a href="#personalinfo-container" > About</a>
         <a href="#project-contanier"> Project</a>
         <a href="#contact-container"> Contact</a>
       </font>
@@ -44,51 +44,50 @@
               <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
            </svg>
           </div>
-       <!-- ---------// main section 2 //------------ -->
-       <section class="about-container" id="about-container" class="panal" class="hidden">
-        <img src="photo/atomic-structure.png" alt="atomic-structure" id="atomic-logo">
-        <div class="grid-container">
-          <div class="paragraph"> 
-            <font Face="Ink Free">
-              <h1 id="about-title">"About me" </h1>
-              <strong>
-                <p id="about-paragraph">I'm Mina Thamer a 23 years old from Baghdad, Iraq. A front-end developer 
-                  Gradute from U.O.M chemist departement .
-                  I have an experience in lab and attended conferences about them <br>
-                  interested in building web apps ,join to "She Codes To" program to develop my skills<br>
-                  I believe that programmer can make life easier and show world that Iraqi woman can code.
-                </p>
-              </strong>
-            </font>
-          </div>
-          <div >
-            <font Face="Ink Free">
+      <!-- ---------// main section 2 //------------ -->          
+      <img src="photo/atomic-structure.png" alt="atomic-structure" id="atomic-logo">
+      <img src="photo/atomic-structure.png" alt="atomic-structure" id="atomic-logo2">
+      <section  id="personalinfo-container" class="hidden">       
+        <div class="personalinfo-container">
+        <div class="section-container">
+            <div class="info"> 
+                <h1 id="about-title">"About me" </h1>
+                <strong>
+                    <p id="about-paragraph">I'm Mina Thamer a 23 years old from Baghdad, Iraq. A front-end developer 
+                        Gradute from U.O.M chemist departement .
+                        I have an experience in lab and attended conferences about them <br>
+                        interested in building web apps ,join to "She Codes To" program to develop my skills<br>
+                        I believe that programmer can make life easier and show world that Iraqi woman can code.
+                    </p>
+                </strong>  
+            </div>
+            <div class="info">
                <h1 id="skills-title">"Skills "</h1>
                <div class="skills-logo">
-                <img src="photo/html (1).png" alt="html-logo" id="skills-logo">
-                <img src="photo/css-3.png" alt="css-logo" id="skills-logo">
-                <img src="photo/js.png" alt="js-logo" id="skills-logo">
-                <img src="photo/physics.png " alt="react-logo" id="skills-logo">
-                <img src="photo/photoshop.png " alt="photoshop-logo" id="skills-logo">
-                <img src="photo/illustrator.png " alt="illustrator-logo" id="skills-logo">
-              </div>
+                  <img src="photo/html (1).png" alt="html-logo" id="skills-logo">
+                  <img src="photo/css-3.png" alt="css-logo" id="skills-logo">
+                  <img src="photo/js.png" alt="js-logo" id="skills-logo">
+                  <img src="photo/physics.png " alt="react-logo" id="skills-logo">
+                  <img src="photo/photoshop.png " alt="photoshop-logo" id="skills-logo">
+                  <img src="photo/illustrator.png " alt="illustrator-logo" id="skills-logo">
+                </div>
               <h1 id="Abilities-title">"Abilities"</h1>
-              <ol id="abilities-paragraph">
+              <ol class="abilities-paragraph">
                   <li>Communication</li>
                   <li>Teamwork</li>
                   <li>solve Problems</li>
                   <li>Design</li>
                   <li>Computer Skills</li>
                 </ol>
-            </font>
-          </div>
+            </div>
         </div>
+      </div>
       </section>
-     <!-- ---------// main section 3//------------ -->
-      <section class="project-contanier" id="project-contanier"class="hidden">
-        <!-- <h1 id="Headings">"Project" </h1> -->
+    <!-- ---------// main section 3//------------ -->
+    <section  id="project-contanier" class="hidden">
+      <h1 id="Headings">"Project" </h1>
+      <div class="project-contanier">
         <div class="main-container">  
-          <!-- <h1 id="Headings">"Project" </h1> -->
           <!-- card 1 -->
           <div class="card-container ">
               <img src="photo/movie-library.png" alt="movie-library" class="card-img">
@@ -122,8 +121,9 @@
                   </a>
               </div>            
           </div>
-      </div> 
-      </section> 
+        </div> 
+      </div>
+    </section> 
     <!-- ----------//section 4//------------ -->
     <section id="contact-container" class="hidden">
       <h1 id="contact-title">"contact"</h1>
@@ -187,9 +187,9 @@
             alert("FAILED...", error);
           }
         );
-      });
-  </script>
-    </section>  
+        });
+       </script>
+      </section>  
     </main>
     <script src="practis.js"></script>
    <footer>
