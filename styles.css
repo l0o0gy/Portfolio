@@ -417,6 +417,7 @@ footer .footer-icon .link-icon{
   .info-container > h2{
     text-align: center;
     font-size: 40px;
+    color: white;
   }
   .info-container > h2::before{
     content:none;
