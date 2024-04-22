@@ -47,8 +47,8 @@ header{
   background: linear-gradient(0deg, rgba(195,128,219,1) 20%, rgba(198,117,227,1) 37%, rgba(187,94,221,1) 54%, rgba(174,73,210,1) 68%, rgba(143,53,175,1) 82%, rgba(86,22,128,1) 100%);
 }
 #self-img{
-  width: 470px;
-  padding-top: 30px;
+  width: 500px;
+  padding-top: 40px;
   margin-left:20px;
   padding-left: 10px;
 }
@@ -133,6 +133,7 @@ color: #000;
   justify-content: center;
   align-items: center;
   padding: 0px 90px ; 
+  /* padding-bottom: 10px; */
 }
 .section-container{
   display: flex;
@@ -188,14 +189,16 @@ padding: 5px;
   left: -10%;
   z-index: -1;
   animation: rotate 20s infinite ;
+  opacity: 0.3;
 }
 #atomic-logo2{
   position:fixed;
   width: 150px;
-  top:480px;
+  top:550px;
   right: -10px;
   z-index: -1;
   animation: rotate 20s infinite ;
+  opacity: 0.3;
 }
 @keyframes rotate {
   from{
@@ -216,11 +219,12 @@ padding: 5px;
 }
 .project-contanier{
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* display: flex;
   justify-content: center; */
   align-items: center;
   padding: 0px 90px;  
+  margin-bottom: 0;
 }
 .main-container{
   display: flex;
@@ -325,6 +329,7 @@ font-size: 20px;
   box-shadow: 2px 0 10px silver;
 }
 footer{
+  padding: 10px 0px ;
   margin: 0;
   background-color: rgb(202, 198, 198);
   color: #000;
@@ -353,28 +358,7 @@ footer .footer-icon .link-icon{
     margin: 0px 50px;
     font-size:20px;
   }
-  /* #self-img{
-    width: 390px;
-    padding-top: 30px;
-    margin-left:0px;
-    padding-left:0px;
-  } */
-  /* .info-container > h1{
-    font-size: 40px;
-    margin-left: -30px;
-  }
-  .info-container > h2{
-    font-size: 40px;
-    margin-left: -30px;
-  }
-  .parent-icon{
-    margin-left: -30px;
 
-  }
-  .link-icon{
-    width: 30px;
-    margin-top:50px;
-  } */
   .custom-shape-divider-bottom-1713476919 svg {
     width: calc(184% + 1.3px);
     height: 86px;
@@ -382,7 +366,7 @@ footer .footer-icon .link-icon{
 }
 /** For mobile devices **/
 
-@media screen and (max-width:850px){
+@media screen and (max-width:900px) {
   header{
     padding: 15px 2px;
   }
@@ -429,13 +413,17 @@ footer .footer-icon .link-icon{
     width: 40px;
    }
    .section-container {
-    flex-direction: column;
+    display: inline;
+    flex-direction: column; 
   }
   .personalinfo-container{
     padding: 0px 27px; 
   }
+  .personalinfo-container .section-container p {
+    font-size: 25px;
+  }
   .main-container{
-    flex-direction: column;
+    flex-direction: column; 
     padding: 0px 27px; 
   }
   .project-contanier{
@@ -445,21 +433,44 @@ footer .footer-icon .link-icon{
  .main-container .card-container{
     margin-top: 90px;
   }
+  .project-contanier .main-container .card-container p{
+    font-size: 25px;
+    padding-left: 5px;
+  }
  .contact-container{
     padding: 0px 27px; 
     margin-top: -80px;
   }
+  #atomic-logo2{
+    top:750px;
+  
+  }
+  #skills-logo{
+    margin: 10px;
+  }
+  .contact-container .feedback h3{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:900px) and (min-width:677px){
+  .main-container{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    padding: 0px 27px; 
+  }
   .contact-container .feedback{
     display: grid;
-    grid-template-columns: repeat(1,1fr);  
-  } 
+    grid-template-columns: repeat(2,1fr);  
+  }
+
 }
 @media screen and (max-width:768px){
   #self-img{ 
     width: 370px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .custom-shape-divider-bottom-1713476919 svg {
       width: calc(132% + 1.3px);
       height: 59px;
@@ -486,7 +497,7 @@ footer .footer-icon .link-icon{
   }
   .link-icon{
     width: 30px;
-   }
+  }
   .section-container {
     flex-direction: column;
   }
@@ -513,11 +524,18 @@ footer .footer-icon .link-icon{
     grid-template-columns: repeat(1,1fr);  
   } 
   .custom-shape-divider-bottom-1713476919 {
-    bottom:0px;
+    bottom:-1px;
   }
   .custom-shape-divider-bottom-1713476919 svg {
     width: calc(100% + 1.3px);
     height: 50px;
+}
+#atomic-logo{
+  display:none;
+}
+#atomic-logo2{
+  display:none;
+
 }
 }
 @media screen and (max-width:430px) {
