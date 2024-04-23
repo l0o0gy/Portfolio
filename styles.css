@@ -361,7 +361,78 @@ footer .footer-icon .link-icon{
   }
 }
 /** For mobile devices **/
-
+@media screen and (max-width :950px) {
+  .hero{
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #self-img{ 
+    background-color: #00000056;
+    margin-top: 90px;
+    width: 450px;
+    border: solid 1px ;
+    box-shadow: 5px 0 8px  snow ;
+    border-radius:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -70px;
+  }
+  .info-container{
+    margin-top: -160px;
+  }
+  .info-container > h1{
+    text-align: center;
+    font-size: 40px;
+  }
+  .info-container > h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+  }
+  .parent-icon{
+    text-align: center;
+  } 
+  .link-icon{
+    width: 40px;
+   }
+   .info-container > h2::before{
+    content:none;
+  }
+  .section-container {
+    display: inline;
+    flex-direction: column; 
+  }
+  .personalinfo-container{
+    padding: 0px 27px; 
+  }
+  .personalinfo-container .section-container p {
+    font-size: 25px;
+  }
+  #skills-logo{
+    margin-left: 30px;
+  }
+  .main-container{
+    flex-direction: column; 
+    padding: 0px 27px; 
+  }
+  .project-contanier{
+    padding: 0px; 
+    margin-top: -100px;
+  }
+ .main-container .card-container{
+    margin-top: 90px;
+  }
+  .project-contanier .main-container .card-container p{
+    font-size: 25px;
+    padding-left: 5px;
+  }
+ .contact-container{
+    padding: 0px 27px; 
+    margin-top: -80px;
+  }
+}
 @media screen and (max-width:900px) {
   header{
     padding: 15px 2px;
@@ -470,6 +541,16 @@ footer .footer-icon .link-icon{
   .custom-shape-divider-bottom-1713476919 svg {
       width: calc(132% + 1.3px);
       height: 59px;
+  }
+}
+@media screen and (max-width:700px){
+  .skills-logo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #skills-logo{
+    margin-left: 30px;
+    padding-left: 0;
   }
 }
 @media screen and (max-width:640px){
