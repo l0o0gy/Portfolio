@@ -512,9 +512,6 @@ footer .footer-icon .link-icon{
     top:750px;
   
   }
-  #skills-logo{
-    margin: 10px;
-  }
   .contact-container .feedback h3{
     font-size: 25px;
   }
@@ -543,16 +540,7 @@ footer .footer-icon .link-icon{
       height: 59px;
   }
 }
-@media screen and (max-width:700px){
-  .skills-logo{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
-  #skills-logo{
-    margin-left: 30px;
-    padding-left: 0;
-  }
-}
+
 @media screen and (max-width:640px){
   .navbar-container a{
     font-size: 15px;
